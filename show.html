@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id="navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- "Mobile menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          <!-- Top Navigation Menu -->
+          <div class="topnav" id="myTopnav">
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <!-- The sidebar -->
+              <div class="sidebar">
+                <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+              </div>
+            </div>
+          </div>
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+          }
+          </script>
+          <ul>
+            <li><a class="navbar-header" href="#home"><img src="youtube.png" alt="Logo"></a></li>
+          </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left" id="navbar-left">
+              <li ><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="videos.html"><i class="fa fa-fw fa-globe"></i>Videos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group input-group">
+                      <input type="text" class="form-control" id="searchField" placeholder="Search..">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="document.getElementById('searchField').value = ''">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                      </span>        
+                    </div>
+                    </form>
+                    <li><a href="Contact.html"><i class="fa fa-fw fa-phone"></i> Contact Us</a></li>
+              <li><a href="MyAccount.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h2 style="text-align:center">Welcome to My Profile </h2>
+    <div class="card">
+      <img src="fawad.jpg" alt="Ali" style="width:100%">
+      <h1>Fawad Khan</h1>
+      <p class="title">Director, EagleOne Corp</p>
+      <p>Harvard University</p>
+      <div style="margin: 25px 0;">
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <p><button>Contact</button></p>
+    </div>
+</body>
+</html>
